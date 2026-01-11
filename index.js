@@ -70,8 +70,14 @@ projectTl.from(".grid-container > div", {
 });
 const form_i = document.querySelector('.list-5')
 const form =document.querySelector('.form')
-form_i.addEventListener('click',()=>{
+form_i.addEventListener('click',(e)=>{
  form.style.display="flex"
+  e.preventDefault()
+})
+const btn  = document.getElementById('btn')
+btn.addEventListener('click',(e)=>{
+  e.preventDefault()
+  form.style.display="none"
 })
 const x = document.querySelector('.x')
 x.addEventListener('click',()=>{
